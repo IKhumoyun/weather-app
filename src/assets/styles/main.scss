@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Expressway Rg';
+  src: url('../fonts/ExpresswayRg-Regular.eot');
+  src: url('../fonts/ExpresswayRg-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ExpresswayRg-Regular.woff') format('woff'),
+  url('../fonts/ExpresswayRg-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #231F20;
+  color: #ffffff;
+  font-family: "Expressway Rg";
+}
+
+.home-page {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.weather-left {
+  text-align: center;
+
+  .weather-logo {
+    height: 80px;
+    width: 80px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .temperature {
+    margin-top: 20px;
+    font-size: 120px;
+
+    &:before {
+      content: ""
+    }
+  }
+}
+
+.item-logo {
+  height: 40px;
+  width: 40px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.weather-logo-storming {
+  background-image: url("../images/thunder.svg");
+}
+
+.weather-logo-drizzling {
+  background-image: url("../images/drizzle.svg");
+}
+
+.weather-logo-raining {
+  background-image: url("../images/rain.svg");
+}
+
+.weather-logo-snowing {
+  background-image: url("../images/snow.svg");
+}
+
+.weather-logo-windy {
+  background-image: url("../images/windy.svg");
+}
+
+.weather-logo-clear {
+  background-image: url("../images/clear.svg");
+}
+
+.weather-logo-cloudy {
+  background-image: url("../images/cloud.svg");
+}
+
+.weather-logo-error {
+  background-image: url("../images/thunder.svg");
+}
+
+.weather-title {
+  font-size: 80px;
+  max-width: 500px;
+
+  .weather-status {
+    color: #f12345
+  }
+
+  .weather-place {
+    color: #00a0ff;
+    text-transform: capitalize;
+  }
+}
+
+.top-menu {
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+
+  a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+
+    &.active {
+      color: #00a0ff;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      margin: auto;
+      height: 3px;
+      width: 100%;
+      bottom: -3px;
+      background-color: #ffffff;
+    }
+  }
+}
+
+.forecast-block {
+  display: flex;
+  justify-content: space-between;
+}
+
